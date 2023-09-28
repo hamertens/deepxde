@@ -59,10 +59,7 @@ class TrainingDisplay:
                     np.linalg.norm(train_state.best_ystd, ord=np.inf)
                 )
             )
-            print(
-                "    max uncertainty location:",
-                train_state.X_test[np.argmax(train_state.best_ystd)],
-            )
+            
         print("")
         self.is_header_print = False
 
